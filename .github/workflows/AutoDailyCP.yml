@@ -45,7 +45,7 @@ jobs:
           FORM_PATH: ${{ secrets.FORM_PATH }}
           run: |
           python3 DailyCP.py ${SCHOOL_NAME} ${ACCOUNT} ${PASSWORD} ${ADDRESS} ${FORM_PATH}
-      - name : Upload formdb
+      - name: Upload formdb
         uses: actions/upload-artifact@master
         with:
           name: formdb
